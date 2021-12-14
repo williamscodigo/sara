@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Jose W. Rivas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>SARA - Search And Reporting Application</title>
+    <meta name="description" content="sara will take the input query you privide in the search box and give back a report displaying all the items that match the resources title.">
+</head>
+
+<body>
+    <nav id="site-top">
+        <div class="container flex-space-between">
+            <div class="logo">
+                <h3>SARA</h3>
+            </div>
+            <div class="desktop-menu hidden">
+                <ul class="flex-space-around">
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#browser">Browser</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu visible">
+                <a href="#" class="inactive" id="toggle-menu"><img src="./icons/hamburger-menu.svg" alt="hamburger-menu"></a>
+                <div class="menu hidden">
+                    <ul class="flex-column">
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#search">Search</a></li>
+                        <li><a href="#browser">Browser</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="hero">
+            <div class="container flex-column">
+                <p class="sara-meaning"><span>Search</span> <span>And</span>
+                    <span>Reporting </span> <span>Application</span>
+                </p>
+                <h1 class="sara-acronym">SARA</h1>
+                <p class="sara-description">Display search results previously stored in files of type CSV, JSON, and XML formats; also display search results obtained from using the Google Search API.</p>
+                <a href="#search" class="btn">Try It Now</a>
+            </div>
+        </div>
+    </header>
+    <section id="resources">
+        <div class="container">
+            <h2>Web Development Resources</h2>
+            <ul>
+                <li>
+                    <a href="https://www.zybooks.com/" target="_blank" rel="noopener noreferrer"><img src="./icons/external-link.svg" alt="external-link">zyBooks</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer"><img src="./icons/external-link.svg" alt="external-link">W3schools</a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/" target="_blank" rel="noopener noreferrer"><img src="./icons/external-link.svg" alt="external-link">Stack Overflow</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/" target="_blank" rel="noopener noreferrer"><img src="./icons/external-link.svg" alt="external-link">MDN Web Docs</a>
+                </li>
+                <li>
+                    <a href="https://developers.google.com/custom-search/v1/overview" target="_blank" rel="noopener noreferrer"><img src="./icons/external-link.svg" alt="external-link">Google Search API</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main id="search" role="main">
+        <div class="container">
+            <!--Search and Reporting mechanism here-->
+            <div id="search-and-report">
+                <!--simple sara-animation-->
+                <div id="sara-animation">
+                    <h2 class="animate">SARA</h2>
+                </div>
+                <!--custom web component-->
+                <search-box placeholder="Search..."></search-box>
+                <p>note: The search is based on resources title also if more than 20 results match, only first 20 are display</p>
+                <div id="report" class="flex">search result</div>
+            </div>
+        </div>
+    </main>
+    <section id="browser">
+        <div class="container">
+            <h2>Browser Information</h2>
+            <div id="browser-info"></div>
+            <!--can add a div for geolocation-->
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="intro">
+                <p>Hello World!. My name is Jose W. Rivas, I live in New York City area in NY, USA. I am a passionate and dedicated learner and aspire to become an outstanding Software Engineer with focus on web and mobile development. I recently completed
+                    my degree in computer science gaining important knowledge and experience in software development, including the different tools and techniques that are essential to design, create and maintain high quality, functional, scalable, and
+                    visually captivating applications.</p>
+            </div>
+            <div class="front-end-skills">
+                <h3>Skills</h3>
+                <div class="skils flex-row-wrap">
+                    <div class="card">
+                        <img src="./icons/skills/html5.svg" alt="html5">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/css3-alt.svg" alt="css3">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/js.svg" alt="javascript">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/react.svg" alt="react">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/sass.svg" alt="sass">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/bootstrap.svg" alt="bootstrap">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/npm.svg" alt="npm">
+                    </div>
+                    <!-- <div class="card">
+                        <img src="./icons/skills/node.svg" alt="node">
+                    </div> coming soon (plus Express)-->
+                    <div class="card">
+                        <img src="./icons/skills/php.svg" alt="php">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/laravel.svg" alt="laravel">
+                    </div>
+                    <div class="card">
+                        <img src="./icons/skills/git-alt.svg" alt="git">
+                    </div>
+                </div>
+            </div>
+            <div class="github-projects">
+                <div class="grid">
+                    <div class="words-github">
+                        <p>Take a peak at some of my Projects on Github</p>
+                    </div>
+                    <div class="link-github">
+                        <a href="https://github.com/williamscodigo" target="_blank">
+                            <!--show tooltip williamscodigo-->
+                            <img src="./icons/github-square.svg" alt="github/williamscodigo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="flex-column">
+                <h2>Follow Me</h2>
+                <div class="social flex-row">
+                    <a href="https://www.instagram.com/williamscodigo/" target="_blank">
+                        <img src="./icons/social/instagram-square.svg" alt="instagram">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCLkcqI83DnNm3YPN5ySeCCQ" target="_blank">
+                        <img src="./icons/social/youtube-square.svg" alt="youtube">
+                    </a>
+                    <a href="https://twitter.com/williamscodigo" target="_blank">
+                        <img src="./icons/social/twitter-square.svg" alt="twitter">
+                    </a>
+                </div>
+                <p>SARA by <span>Jose W. Rivas</span> &copy; 2021</p>
+            </div>
+        </div>
+    </footer>
+    <!--fixed, up-arrow icon (back to top of the page)-->
+    <a href="#site-top" id="back-to-top">
+        <img src="./icons/arrow-alt-circle-up.svg" alt="up-arrow">
+    </a>
+
+    <script type="module" src="./js/components/customSearchBox.js"></script>
+    <script src="./js/main.js" defer></script>
+</body>
+
+</html>
