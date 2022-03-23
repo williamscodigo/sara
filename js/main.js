@@ -198,7 +198,6 @@ function doSearch(e) {
         reportBox.innerHTML = "<p style='color:blue;'>NO MATCH WAS FOUND<p>";
         return;
     }
-    //now how to present the data!
     //restrict result to 20 
     if (data.length > 20) data = data.splice(0, 19); //if array bigger than 20 take only first 20 elements
     let report = ""; //build report

@@ -1,10 +1,10 @@
 # SARA (Search And Reporting Application)
 
->This is a redo from a project I work on in college - Course: **Internet and Web Technologies**. This project is one of my favorites, it taught me the importance of *Collaboration*, *Critical Thinking*, and *Problem Solving* in the Software Development Life Cylce and gave me the foundation and introduction to Web Application Development including: client-server architecture, popular Internet application protocols, Internet application design, website design, client-side programming and server-side programming. I also learned the basics of Search Engine Optimization, SEO is about making it easy for search enigines to crawl, indexed and understand a websites content.
+>This is a redo (front-end part) of a project I work on in college - Course: **Internet and Web Technologies**. This project is one of my favorites, it taught me the importance of *Collaboration*, *Critical Thinking*, and *Problem Solving* in Software Development and gave me the foundation and introduction to Web Application Development including: client-server architecture, popular Internet application protocols, Internet application design, website design, client-side programming and server-side programming. I also learned the basics of Search Engine Optimization, SEO is about making it easy for search enigines to crawl, indexed and understand a websites content.
 
 ## Project Description
 
-The project for the Fall 2019 semester is to build a website containing a "Search And Reporting Application" (SARA). The project will be implemented in three phases. The first two are to be completed individually. The third - to be described in a separate document - will generally require working in groups, with a recommended group size of 4 students.
+The project for the Fall 2019 semester is to build a website containing a "Search And Reporting Application" (SARA). The project will be implemented in three phases.
 
 ## Technologies
 * Front-end 
@@ -16,7 +16,7 @@ The project for the Fall 2019 semester is to build a website containing a "Searc
     * Node
     * MySQL
 
-NOTE: Frameworks such a Bootstrap/TailwindCSS for css (as well as CSS pre-processors like SASS), React/Vue/Angular for js, and Laravel for php or Express for Node are not use for this project since its foundational and was design to introduce us (students) to the basics (Technologies above), but frameworks are essential in Modern (agile) Web Development and I highly recomment taking time to learn atleast one Front-end or/and Back-end framework, after you feel comfortable with the basics.
+NOTE: Frameworks such a Bootstrap/TailwindCSS for css (as well as CSS pre-processors like SASS), React/Vue/Angular for js, and Laravel for php or Express for Node were not use use by my group in this project since we all were new to the technologies and only knew the fundamentals, but frameworks are essential in Modern (agile) Web Development and I highly recomment taking time to learn atleast one Front-end or/and Back-end framework, after you feel comfortable with the basics.
 
 ## Overview
 
@@ -56,7 +56,6 @@ The home page should have at least the following four high-level menu options.
 
 ## Responsive Web Design
  
-
 The website should use "responsive web design" (RWD) – so that it can be easily viewed on mobile devices, as well as on larger screens such as laptops and desktops.
 
 ## Read, Search, and Write
@@ -65,7 +64,7 @@ The site should allow the entry of a search term in a search box, pass that to t
 
 ___
 
-### NOTE1: Since calls to Google Search API is not fully free and requires a developer to create an api key to use, I improvise the mechanism we have to built in this project by using the Free fake API JSONPlaceholder (calls to /photos return a json file containing fake data with fields some of them are id,title, and url which i have use to assimilate results comming from the Google Search API. (contribute and learn more about JSONPlaceholder at http://jsonplaceholder.typicode.com) 
-THE CURRENT SETUP WORKS AS FOLLOWS: Make a one time call to JSONPlaceholder, store that info locally when the user input a search use the locally store results, this avoid making a new call to the api everytime the user enter a value in the search box - note: This technique can be use in a real project with the difference of making a new api call everytime there is new information available.
+### NOTE1: for this project (redo) I improvise the mechanism we have to built by using the Free fake API JSONPlaceholder (calls to /photos return a json file containing fake data with fields some of them are id,title, and url  (as if results were comming from the Google Search API.) 
+THE CURRENT SETUP WORKS AS FOLLOWS: Make a one time call to JSONPlaceholder, store that info in a variable locally, when the user input a search use this variable.
 
-### NOTE2: Since Phase 3 of this project requires database storage Its not implemented here. Feel free to clone this repository and add to it by implementing that missing part (it be an execellent practice for anyone persuing a Back-end developer position.)
+### NOTE2: Since Phase 3 of this project requires database storage Its not implemented here. Feel free to clone this repository and add to it by implementing that missing part.
