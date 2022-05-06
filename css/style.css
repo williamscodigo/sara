@@ -339,6 +339,7 @@ search-box {
 }
 
 #browser-info {
+    overflow: hidden;
     font-size: 1.125rem;
 }
 
