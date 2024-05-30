@@ -16,8 +16,6 @@ The project for the Fall 2019 semester is to build a website containing a "Searc
     * Node
     * MySQL
 
-NOTE: Frameworks such a Bootstrap/TailwindCSS for css (as well as CSS pre-processors like SASS), React/Vue/Angular for js, and Laravel for php or Express for Node were not use use by my group in this project since we all were new to the technologies and only knew the fundamentals, but frameworks are essential in Modern (agile) Web Development and I highly recomment taking time to learn atleast one Front-end or/and Back-end framework, after you feel comfortable with the basics.
-
 ## Overview
 
 Phase 1: Create a website which will be used to house SARA, as well as other pertinent information.
@@ -64,7 +62,7 @@ The site should allow the entry of a search term in a search box, pass that to t
 
 ___
 
-### NOTE1: for this project (redo) I improvise the mechanism we have to built by using the Free fake API JSONPlaceholder (calls to /photos return a json file containing fake data with fields some of them are id,title, and url  (as if results were comming from the Google Search API.) 
+### NOTE1: for this project (redo) I improvise the mechanism we built by using the Free fake API JSONPlaceholder (calls to /photos return a json file containing fake data with fields some of them are id,title, and url  (as if results were comming from the Google Search API.) 
 THE CURRENT SETUP WORKS AS FOLLOWS: Make a one time call to JSONPlaceholder, store that info in a variable locally, when the user input a search use this variable.
 
-### NOTE2: Since Phase 3 of this project requires database storage Its not implemented here. Feel free to clone this repository and add to it by implementing that missing part.
+### NOTE2: Since Phase 3 of this project requires database storage Its not implemented here. Feel free to clone this repository and add to it by implementing that part.
